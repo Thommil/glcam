@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Camera -->
+    <PreferenceCategory android:title="@string/prefs_camera">
+        <CheckBoxPreference android:key="prefs_camera_quality_auto"
+            android:title="@string/prefs_camera_quality_auto_title"
+            android:summary="@string/prefs_camera_quality_auto_summary"
+            android:defaultValue="true"/>
+        <ListPreference
+            android:key="prefs_camera_quality"
+            android:title="@string/prefs_camera_quality_title"
+            android:summary="@string/prefs_camera_quality_summary"
+            android:entries="@array/prefs_camera_quality_entries"
+            android:entryValues="@array/prefs_camera_quality_entries_values"
+            android:defaultValue="@string/prefs_camera_quality_default"
+            android:enabled="false"
+            android:dialogTitle="@string/prefs_camera_quality_dialog" />
+        <ListPreference
+            android:key="prefs_camera_plugin_default"
+            android:title="@string/prefs_camera_plugin_default_title"
+            android:summary="@string/prefs_camera_plugin_default_title_summary"
+            android:entries="@array/prefs_camera_plugin_default_entries"
+            android:entryValues="@array/prefs_camera_plugin_default_entries_values"
+            android:defaultValue="@string/prefs_camera_plugin_default_default"
+            android:dialogTitle="@string/prefs_camera_plugin_default_dialog" />
+    </PreferenceCategory>
+    <!-- Preview -->
+    <PreferenceCategory android:title="@string/prefs_preview">
+        <ListPreference
+            android:key="prefs_preview_plugin_default"
+            android:title="@string/prefs_preview_plugin_default_title"
+            android:summary="@string/prefs_preview_plugin_default_title_summary"
+            android:entries="@array/prefs_preview_plugin_default_entries"
+            android:entryValues="@array/prefs_preview_plugin_default_entries_values"
+            android:defaultValue="@string/prefs_preview_plugin_default_default"
+            android:dialogTitle="@string/prefs_preview_plugin_default_dialog" />
+    </PreferenceCategory>
+    <!-- UI -->
+    <PreferenceCategory android:title="@string/prefs_ui">
+        <ListPreference
+            android:key="prefs_ui_plugin_default"
+            android:title="@string/prefs_ui_plugin_default_title"
+            android:summary="@string/prefs_ui_plugin_default_title_summary"
+            android:entries="@array/prefs_ui_plugin_default_entries"
+            android:entryValues="@array/prefs_ui_plugin_default_entries_values"
+            android:defaultValue="@string/prefs_ui_plugin_default_default"
+            android:dialogTitle="@string/prefs_ui_plugin_default_dialog" />
+    </PreferenceCategory>
+</PreferenceScreen>
